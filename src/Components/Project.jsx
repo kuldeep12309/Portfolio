@@ -6,7 +6,7 @@ const Project = () => {
       description:
         "A personal portfolio website built using React and React Bits for smooth animations and modern UI effects. Showcases my projects, skills, and contact information in a clean and responsive layout.",
       tech: ["React", "React Bits", "Tailwind CSS"],
-      live: "https://portfolio-ashy-nine-elkgum0r8l.vercel.app/",
+      live: "https://portfolio-rho-rosy-kyenn36oir.vercel.app/",
       github: "https://github.com/kuldeep12309/Portfolio",
     },
     {
