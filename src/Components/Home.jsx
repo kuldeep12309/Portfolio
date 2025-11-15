@@ -54,7 +54,7 @@ const Home = () => {
             <span className="font-semibold ">React</span> on the
             frontend and{" "}
             <span className="font-semibold text-green-600">Django</span> on the
-            backend. I craft seamless user experiences powered by robust APIs.
+            backend. I craft seamless user experiences powered by  APIs.
           </p>
 
           <Link

@@ -53,7 +53,7 @@ function App() {
           color={[1,1,1]}
           mouseReact={false}
           amplitude={0.7}
-          speed={0.8}
+          speed={0.6}
           className="w-full h-full"
         />
       </div>

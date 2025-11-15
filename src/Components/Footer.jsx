@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 const Footer = () => {
   const typedRef = useRef(null);
