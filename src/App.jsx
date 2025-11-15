@@ -52,8 +52,8 @@ function App() {
         <Iridescence
           color={[1,1,1]}
           mouseReact={false}
-          amplitude={0.1}
-          speed={0.1}
+          amplitude={0.7}
+          speed={0.8}
           className="w-full h-full"
         />
       </div>
