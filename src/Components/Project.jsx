@@ -13,7 +13,7 @@ const Project = () => {
       id: 2,
       title: "E-Commerce Website (React)",
       description:
-        "A modern e-commerce platform built with React, Axios, and Redux Toolkit. It connects with a REST API for product and user management. Deployed live on Vercel.",
+        "A modern e-commerce platform built with React, Axios, and Redux Toolkit. It connects with a REST API for product. Deployed live on Vercel.",
       tech: ["React", "Axios", "Redux Toolkit", "REST API", "Vercel"],
       live: "https://eccomerce-website-red.vercel.app/",
       github: "https://github.com/kuldeep12309/Eccomerce-React",
@@ -22,10 +22,18 @@ const Project = () => {
       id: 3,
       title: "REST API with Django + SQLite",
       description:
-        "A RESTful API built using Django REST Framework and SQLite. Includes CRUD endpoints, authentication, and live hosting.",
+        "A RESTful API built using Django REST Framework and SQLite and live hosting.",
       tech: ["Django", "DRF", "SQLite"],
 
       github: "https://github.com/kuldeep12309/RestApi-sqllite3",
+    },
+    {
+      id: 4,
+      title: "E-Commerce (React + DRF + MySQL)",
+      description:
+        "A fullstack e-commerce app using React frontend, Django REST Framework backend, and MySQL database.",
+      tech: ["React", "DRF", "MySQL"],
+      github: "https://github.com/kuldeep12309/Fullstack---DRF-REACT-MYSQL",
     },
   ];
 
@@ -70,20 +78,18 @@ const Project = () => {
                   <a
                     href={project.live}
                     target="_blank"
-                  
                     className="text-sm font-semibold text-white bg-green-600 px-3 py-2 rounded hover:bg-green-700 transition-colors duration-300"
                   >
-                    Live Demo 
+                    Live Demo
                   </a>
                 )}
                 {project.github && (
                   <a
                     href={project.github}
                     target="_blank"
-                    
                     className="text-sm font-semibold text-white bg-gray-800 px-3 py-2 rounded hover:bg-gray-900 transition-colors duration-300"
                   >
-                    GitHub 
+                    GitHub
                   </a>
                 )}
               </div>

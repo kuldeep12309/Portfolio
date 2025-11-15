@@ -7,7 +7,6 @@ const Resume = () => {
         Resume
       </h1>
 
-    
       <div className="border-b border-gray-300 pb-4 mb-6">
         <h2 className="text-2xl font-semibold">Kuldeep Gupta</h2>
         <div className="mt-2 space-y-1 text-gray-700">
@@ -25,7 +24,6 @@ const Resume = () => {
             <a
               href="https://github.com/kuldeep12309"
               target="_blank"
-             
               className="text-blue-600 hover:underline"
             >
               github.com/kuldeep12309
@@ -111,12 +109,12 @@ const Resume = () => {
               Built dynamic UI components with React Hooks and Tailwind CSS.
             </li>
             <li>
-              Managed backend logic, authentication, and database models using
-              Django ORM with MySQL and SQLite3.
+              Managed backend logic and database models using Django ORM with
+              MySQL and SQLite3.
             </li>
             <li>
               Utilized Git & GitHub for version control and deployed apps using
-              Vercel and Render.
+              Vercel.
             </li>
             <li>
               Tested and documented APIs using Postman for consistent
@@ -162,19 +160,17 @@ const Resume = () => {
             <p className="ml-8">
               Full-stack e-commerce application using React frontend, Django
               REST Framework backend, and MySQL database for product management,
-              authentication, and API integration.
+              and API integration.
             </p>
           </div>
 
           <div>
             <h4 className="font-semibold text-lg">
-              4. REST API Project (DRF + SQLite, Deployed on Render)
+              4. REST API Project (DRF + SQLite)
             </h4>
             <p className="ml-8">
-              Created and deployed a RESTful API using Django REST Framework and
-              SQLite database. Implemented CRUD operations, authentication, and
-              token-based access. Deployed live on <strong>Render</strong> for
-              public API usage and testing.
+              Created a RESTful API using Django REST Framework and SQLite
+              database.
             </p>
           </div>
         </div>
