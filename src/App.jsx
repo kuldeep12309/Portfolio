@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import NavBar from "./Components/NavBar";
 import Home from "./Components/Home";
 import About from "./Components/About";
@@ -50,7 +49,7 @@ function App() {
       {/* Full-screen Iridescent Background */}
       <div className="fixed top-0 left-0 w-full h-full -z-15">
         <Iridescence
-          color={[1,1,1]}
+          color={[1, 1, 1]}
           mouseReact={false}
           amplitude={0.7}
           speed={0.6}
@@ -58,7 +57,6 @@ function App() {
         />
       </div>
 
- 
       <NavBar />
 
       {/* Page Content */}
@@ -66,14 +64,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/project" element={<Project/>}/>
+          <Route path="/project" element={<Project />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
-          
         </Routes>
       </div>
 
-   
       <Footer />
     </>
   );

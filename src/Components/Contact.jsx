@@ -20,18 +20,23 @@ const Contact = () => {
 
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, "_blank");
+    window.open(
+      `https://wa.me/${phoneNumber}?text=${whatsappMessage}`,
+      "_blank"
+    );
 
-    reset(); 
-    setSubmitted(true); 
+    reset();
+    setSubmitted(true);
   };
 
   return (
-    <div className="container shadow-lg mt-10  rounded py-5" style={{ maxWidth: "500px" }}>
+    <div
+      className="container shadow-lg mt-10  rounded py-5"
+      style={{ maxWidth: "500px" }}
+    >
       <h1 className="text-center mb-4">Contact Me</h1>
 
       <form onSubmit={handleSubmit(onSubmit)}>
-        
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
             Name (optional)
@@ -44,7 +49,6 @@ const Contact = () => {
             {...register("name")}
           />
         </div>
-
 
         <div className="mb-3">
           <label htmlFor="email" className="form-label">
@@ -59,7 +63,6 @@ const Contact = () => {
           />
         </div>
 
-       
         <div className="mb-3">
           <label htmlFor="message" className="form-label">
             Message

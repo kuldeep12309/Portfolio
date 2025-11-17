@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
-
 const Footer = () => {
   const typedRef = useRef(null);
 
@@ -23,7 +22,6 @@ const Footer = () => {
   return (
     <footer className="pt-5 pb-4 mt-5 border-top shadow-lg">
       <div className="container text-center">
-        
         <div className="row justify-content-center mb-4">
           <div className="col-md-8">
             <h3 className="fw-semibold text-dark">
@@ -32,7 +30,6 @@ const Footer = () => {
           </div>
         </div>
 
-       
         <div className="row justify-content-center mb-3">
           <div className="col-auto">
             <a
@@ -46,7 +43,6 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/kuldeep-gupta-a0b299327/"
               target="_blank"
-              
               className="btn btn-outline-primary btn-sm mx-2 px-3 py-2 fw-semibold"
             >
               LinkedIn
@@ -56,10 +52,10 @@ const Footer = () => {
 
         <hr className="border-secondary opacity-25" />
 
-        
         <p className="mb-0 small text-muted">
           &copy; {new Date().getFullYear()}{" "}
-          <strong className="text-dark">Kuldeep Gupta</strong>. All rights reserved.
+          <strong className="text-dark">Kuldeep Gupta</strong>. All rights
+          reserved.
         </p>
       </div>
     </footer>

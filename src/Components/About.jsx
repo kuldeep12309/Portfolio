@@ -36,7 +36,7 @@ const skillCategories = [
 
 const About = () => {
   return (
-    <section className="py-16 min-h-screen">
+    <section className="py-16 ">
       <div className="max-w-6xl mx-auto px-4">
         {/* Heading */}
         <h1 className="text-4xl font-bold text-center mb-20">

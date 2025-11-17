@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <div className="scroll-smooth">
       {/* HEADER */}
-      <section className="flex flex-col md:flex-row items-center justify-center min-h-screen py-10">
+      <section className="flex flex-col md:flex-row items-center justify-center  py-10">
         {/* LEFT */}
         <motion.div
           className="w-full md:w-1/2 p-5 text-center md:text-left"
@@ -51,10 +51,9 @@ const Home = () => {
           <p className="text-gray-600 mt-6 text-lg ">
             I’m a full-stack web developer passionate about building powerful,
             scalable, and elegant web solutions using{" "}
-            <span className="font-semibold ">React</span> on the
-            frontend and{" "}
+            <span className="font-semibold ">React</span> on the frontend and{" "}
             <span className="font-semibold text-green-600">Django</span> on the
-            backend. I craft seamless user experiences powered by  APIs.
+            backend. I craft seamless user experiences powered by APIs.
           </p>
 
           <Link
@@ -81,7 +80,7 @@ const Home = () => {
           <h4 className="m-4 text-green-600 italic text-2xl md:text-3xl font-semibold">
             Kuldeep Gupta
           </h4>
-          <p className="text-gray-500">React , Django , Django Rest ,   MySQL</p>
+          <p className="text-gray-500">React , Django , Django Rest , MySQL</p>
         </motion.div>
       </section>
 
@@ -99,9 +98,6 @@ const Home = () => {
 
       <hr className="my-10 border-gray-300" />
 
-
-
-
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -109,9 +105,8 @@ const Home = () => {
         viewport={{ once: true }}
       >
         <Project />
-
       </motion.div>
-     
+
       <hr className="my-10 border-gray-300" />
 
       <motion.div
@@ -121,7 +116,6 @@ const Home = () => {
         viewport={{ once: true }}
       >
         <Resume />
-
       </motion.div>
       <hr className="my-10 border-gray-300" />
 

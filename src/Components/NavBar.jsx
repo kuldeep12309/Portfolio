@@ -45,12 +45,14 @@ function NavBar() {
           </Offcanvas.Header>
 
           <Offcanvas.Body>
-            <Nav className="ms-auto my-2 my-lg-0  justify-content-end pe-3" navbarScroll>
+            <Nav
+              className="ms-auto my-2 my-lg-0  justify-content-end pe-3"
+              navbarScroll
+            >
               <Nav.Link
                 as={Link}
                 to="/"
                 className="fw-semibold text-black  hover:shadow-xl  hover:text-primary"
-
                 onClick={handleClose}
               >
                 Home

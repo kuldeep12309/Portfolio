@@ -38,9 +38,9 @@ const Project = () => {
   ];
 
   return (
-    <section className="py-10 min-h-screen">
-      <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
+    <section className="mb-20">
+      <div className="max-w-7xl mx-auto px-4 mt-22">
+        <h1 className="text-4xl font-bold text-center  text-gray-800">
           My Projects
         </h1>
 
