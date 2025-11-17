@@ -2,189 +2,121 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div className="max-w-4xl mx-auto p-8 shadow-md rounded-2xl text-gray-800 font-sans mt-20 hover:shadow-xl hover:bg-white transition-shadow duration-300">
-      <h1 className="text-4xl font-bold text-center text-blue-600 mb-6">
-        Resume
-      </h1>
+    <div className="max-w-4xl mx-auto p-10 bg-white shadow-lg rounded-xl mt-10 text-gray-900">
+      
+      {/* Header */}
+      <div className="flex flex-col md:flex-row justify-between">
+        <div>
+          <h1 className="text-3xl font-bold">Kuldeep Gupta</h1>
 
-      <div className="border-b border-gray-300 pb-4 mb-6">
-        <h2 className="text-2xl font-semibold">Kuldeep Gupta</h2>
-        <div className="mt-2 space-y-1 text-gray-700">
-          <p>
-            <span className="font-semibold">Email:</span>{" "}
-            <a
-              href="mailto:kuldeepgupta8800@gmail.com"
-              className="text-blue-600 hover:underline"
-            >
-              kuldeepgupta8800@gmail.com
-            </a>
+          <p className="text-blue-600 underline mt-1">
+            <a href="https://github.com/kuldeep12309" target="_blank">GitHub</a> |
+            <a href="https://portfolio-rho-rosy-kyenn36oir.vercel.app/" target="_blank" className="ml-2">Portfolio</a>
           </p>
-          <p>
-            <span className="font-semibold">GitHub:</span>{" "}
-            <a
-              href="https://github.com/kuldeep12309"
-              target="_blank"
-              className="text-blue-600 hover:underline"
-            >
-              github.com/kuldeep12309
-            </a>
-          </p>
-          <p>
-            <span className="font-semibold">Phone:</span> +91-8418835697
-          </p>
+        </div>
+
+        <div className="text-right mt-4 md:mt-0">
+          <p><strong>Email:</strong> kuldeepgupta8800@gmail.com</p>
+          <p><strong>Mobile:</strong> +91 8418835697</p>
         </div>
       </div>
 
-      {/* Professional Summary */}
+      <hr className="my-5" />
+
+      {/* EDUCATION */}
       <section className="mb-6">
-        <h3 className="text-xl font-semibold text-gray-900 border-b-2 border-blue-500 inline-block pb-1 mb-3">
-          Professional Summary
-        </h3>
-        <p className="text-gray-700 ">
-          Passionate and detail-oriented <strong>Full Stack Developer</strong>{" "}
-          with hands-on experience in building dynamic, responsive, and scalable
-          web applications using <strong>React.js</strong> for frontend and{" "}
-          <strong>Django / Django REST Framework (DRF)</strong> for backend.
-          Adept at crafting clean, efficient code and integrating APIs for
-          seamless data flow. Committed to continuous learning, teamwork, and
-          delivering exceptional user experiences.
-        </p>
+        <h2 className="text-xl font-semibold border-b pb-1">EDUCATION</h2>
+
+        <div className="flex justify-between mt-2">
+          <p><strong>Bachelor of Commerce (B.Com)</strong></p>
+          <p>Final Year</p>
+        </div>
       </section>
 
-      {/* Technical Skills */}
+      {/* SKILLS SUMMARY */}
       <section className="mb-6">
-        <h3 className="text-xl font-semibold text-gray-900 border-b-2 border-blue-500 inline-block pb-1 mb-3">
-          Technical Skills
-        </h3>
-        <ul className="list-disc list-inside space-y-1 text-gray-700">
-          <li>
-            <strong>Languages:</strong> HTML5, CSS3, JavaScript (ES6+), Python
-          </li>
-          <li>
-            <strong>Frontend:</strong> React.js, Redux Toolkit, Tailwind CSS
-          </li>
-          <li>
-            <strong>Backend:</strong> Django, Django REST Framework (DRF)
-          </li>
-          <li>
-            <strong>Database:</strong> MySQL, SQLite3
-          </li>
-          <li>
-            <strong>APIs:</strong> RESTful API design & integration, Postman for
-            testing
-          </li>
-          <li>
-            <strong>Tools & Platforms:</strong> Git, GitHub, Vercel (Deployment)
-          </li>
-          <li>
-            <strong>React Tools:</strong> Context API, useState, useEffect,
-            useContext
-          </li>
-          <li>
-            <strong>Responsive Design:</strong> Tailwind CSS (Mobile-first
-            approach)
-          </li>
+        <h2 className="text-xl font-semibold border-b pb-1">SKILLS SUMMARY</h2>
+
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li><strong>Languages:</strong> HTML5, CSS3, JavaScript (ES6+), Python</li>
+          <li><strong>Frontend:</strong> React.js, Redux Toolkit, Tailwind CSS</li>
+          <li><strong>Backend:</strong> Django, Django REST Framework</li>
+          <li><strong>Database:</strong> MySQL, SQLite</li>
+          <li><strong>Tools:</strong> Git, GitHub, Postman, Vercel</li>
+          <li><strong>React Hooks:</strong> useState, useEffect, Context API</li>
+          <li><strong>Soft Skills:</strong> Communication, Teamwork, Problem Solving</li>
         </ul>
       </section>
 
-      {/* Experience */}
+      {/* WORK EXPERIENCE */}
       <section className="mb-6">
-        <h3 className="text-xl font-semibold text-gray-900 border-b-2 border-blue-500 inline-block pb-1 mb-3">
-          Experience
-        </h3>
-        <div>
-          <h4 className="font-semibold text-lg">
-            Full Stack Developer (Trainee) — Universal CodeBox
-          </h4>
-          <ul className="list-disc list-inside mt-2 space-y-1 text-gray-700">
-            <li>
-              Developed and deployed full-stack web applications using React.js
-              and Django REST Framework.
-            </li>
-            <li>
-              Designed and consumed RESTful APIs for efficient frontend-backend
-              communication.
-            </li>
-            <li>
-              Built dynamic UI components with React Hooks and Tailwind CSS.
-            </li>
-            <li>
-              Managed backend logic and database models using Django ORM with
-              MySQL and SQLite3.
-            </li>
-            <li>
-              Utilized Git & GitHub for version control and deployed apps using
-              Vercel.
-            </li>
-            <li>
-              Tested and documented APIs using Postman for consistent
-              integration and debugging.
-            </li>
+        <h2 className="text-xl font-semibold border-b pb-1">WORK EXPERIENCE</h2>
+
+        <div className="mt-3">
+          <div className="flex justify-between">
+            <h3 className="font-bold">Full Stack Developer (Trainee) — Universal CodeBox</h3>
+            <p>April 2024 – Present</p>
+          </div>
+
+          <ul className="list-disc list-inside mt-2 space-y-1">
+            <li>Developed full-stack web applications using React.js and Django REST.</li>
+            <li>Created and integrated REST APIs for frontend–backend communication.</li>
+            <li>Developed dynamic UI using React Hooks and Tailwind CSS.</li>
+            <li>Managed backend logic with Django ORM and MySQL.</li>
+            <li>Used Git & GitHub for source control and Vercel for deployment.</li>
+            <li>Tested APIs using Postman for smooth integration.</li>
           </ul>
         </div>
       </section>
 
-      {/* Projects */}
+      {/* PROJECTS */}
       <section className="mb-6">
-        <h3 className="text-xl font-semibold text-gray-900 border-b-2 border-blue-500 inline-block pb-1 mb-3">
-          Projects
-        </h3>
+        <h2 className="text-xl font-semibold border-b pb-1">PROJECTS</h2>
 
-        <div className="space-y-4 text-gray-700">
+        <div className="mt-3 space-y-4">
+
           <div>
-            <h4 className="font-semibold text-lg">
-              1. E-Commerce Website (React + Redux Toolkit)
-            </h4>
-            <p className="ml-8">
-              Built a modern e-commerce app using React, Redux Toolkit, and
-              Axios with API integration. Deployed live on{" "}
-              <strong>Vercel</strong> for smooth performance and scalability.
+            <h3 className="font-semibold">1. E-Commerce Website (React + Redux Toolkit)</h3>
+            <p className="ml-6 text-gray-700">
+              Developed an e-commerce app using React, Redux Toolkit and REST API. Deployed on Vercel.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg">
-              2. Portfolio Website (React + React Bits)
-            </h4>
-            <p className="ml-8">
-              Developed a personal portfolio using React and React Bits for
-              smooth animations and responsive UI. Hosted live on{" "}
-              <strong>Vercel</strong> showcasing projects and skills.
+            <h3 className="font-semibold">2. Portfolio Website (React + Animations)</h3>
+            <p className="ml-6 text-gray-700">
+              Built a modern personal portfolio with smooth UI and animations using React.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg">
-              3. E-Commerce (React + Django REST Framework + MySQL)
-            </h4>
-            <p className="ml-8">
-              Full-stack e-commerce application using React frontend, Django
-              REST Framework backend, and MySQL database for product management,
-              and API integration.
+            <h3 className="font-semibold">3. E-Commerce (React + Django REST + MySQL)</h3>
+            <p className="ml-6 text-gray-700">
+              Full-stack project with product APIs, cart system, and MySQL backend.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg">
-              4. REST API Project (DRF + SQLite)
-            </h4>
-            <p className="ml-8">
-              Created a RESTful API using Django REST Framework and SQLite
-              database.
+            <h3 className="font-semibold">4. REST API Project (DRF + MYSQL)</h3>
+            <p className="ml-6 text-gray-700">
+              Built CRUD APIs using Django REST Framework and MYSQL database.
             </p>
           </div>
+
         </div>
       </section>
 
-      {/* Education */}
-      <section>
-        <h3 className="text-xl font-semibold text-gray-900 border-b-2 border-blue-500 inline-block pb-1 mb-3">
-          Education
-        </h3>
-        <p className="text-gray-700">
-          <strong>Bachelor of Commerce (B.Com)</strong> — Final Year
-        </p>
+      {/* CERTIFICATES */}
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold border-b pb-1">CERTIFICATES</h2>
+
+        <ul className="list-disc list-inside mt-2 space-y-1">
+          <li>Full Stack Developer Internship – Universal CodeBox</li>
+          <li>Django REST API </li>
+          <li>React + Redux Toolkit Training</li>
+        </ul>
       </section>
+
     </div>
   );
 };
