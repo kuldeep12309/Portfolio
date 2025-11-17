@@ -11,11 +11,19 @@ const Resume = () => {
           <div>
             <h1 className="font-bold">Kuldeep Gupta</h1>
 
-            <p className="text-blue-600 underline mt-1">
+            <p className="text-blue-600  mt-1">
+              <p>
+                LinkedIn :{" "}
+                <a
+                  href="https://www.linkedin.com/in/kuldeep-gupta-a0b299327/"
+                  target="_blank"
+                >
+                  https://www.linkedin.com/in/kuldeep-gupta-a0b299327/
+                </a>
+              </p>
               <a href="https://github.com/kuldeep12309" target="_blank">
                 GitHub
               </a>{" "}
-              |
               <a
                 href="https://portfolio-rho-rosy-kyenn36oir.vercel.app/"
                 target="_blank"
