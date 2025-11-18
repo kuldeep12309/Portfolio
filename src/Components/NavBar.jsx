@@ -17,34 +17,35 @@ function NavBar() {
   const handleShow = () => setShow(true);
 
   return (
-    <Navbar expand={expand} className="container-fluid shadow-lg ">
-      <Container fluid>
-        <Navbar.Brand className="fw-bold">I Portfolio</Navbar.Brand>
+    <Navbar expand={expand} className="container-fluid shadow-lg  bg-blue-950">
+      <Container fluid >
+        <Navbar.Brand className="fw-bold text-white">I Portfolio</Navbar.Brand>
 
-        <Navbar.Toggle
+        <Navbar.Toggle className="bg-blue-950" 
           aria-controls={`offcanvasNavbar-expand-${expand}`}
           onClick={handleShow}
+          
         />
 
-        <Navbar.Offcanvas
+        <Navbar.Offcanvas 
           show={show}
           onHide={handleClose}
-          className="bg-light"
+          className="bg-blue-950"
           id={`offcanvasNavbar-expand-${expand}`}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
           placement="start"
           style={{ width: "60%" }}
         >
-          <Offcanvas.Header closeButton>
+          <Offcanvas.Header closeButton className="bg-blue-950" >
             <Offcanvas.Title
               id={`offcanvasNavbarLabel-expand-${expand}`}
-              className="fw-bold text-primary"
+              className="fw-bold text-light"
             >
               Menu
             </Offcanvas.Title>
           </Offcanvas.Header>
 
-          <Offcanvas.Body>
+          <Offcanvas.Body className="bg-blue-950">
             <Nav
               className="ms-auto my-2 my-lg-0  justify-content-end pe-3"
               navbarScroll
@@ -52,7 +53,7 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/"
-                className="fw-semibold text-black  hover:shadow-xl  hover:text-primary"
+                className="fw-semibold text-white hover:shadow-xl  hover:text-primary"
                 onClick={handleClose}
               >
                 Home
@@ -60,7 +61,7 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/about"
-                className="fw-semibold text-black hover:shadow-xl hover:text-primary"
+                className="fw-semibold text-white hover:shadow-xl hover:text-primary"
                 onClick={handleClose}
               >
                 About
@@ -68,7 +69,7 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/resume"
-                className="fw-semibold text-black hover:shadow-xl hover:text-primary"
+                className="fw-semibold text-white hover:shadow-xl hover:text-primary"
                 onClick={handleClose}
               >
                 Resume
@@ -76,7 +77,7 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/project"
-                className="fw-semibold text-black hover:shadow-xl hover:text-primary"
+                className="fw-semibold text-white hover:shadow-xl hover:text-primary"
                 onClick={handleClose}
               >
                 Projects
@@ -84,7 +85,7 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/contact"
-                className="fw-semibold text-black hover:shadow-xl hover:text-primary"
+                className="fw-semibold text-white hover:shadow-xl hover:text-primary"
                 onClick={handleClose}
               >
                 Contact

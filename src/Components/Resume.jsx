@@ -11,8 +11,8 @@ const Resume = () => {
           <div>
             <h1 className="font-bold">Kuldeep Gupta</h1>
 
-            <p className="text-blue-600  mt-1">
-              <p>
+            <p className="text-blue-600  mt-3 ">
+             
                 LinkedIn :{" "}
                 <a
                   href="https://www.linkedin.com/in/kuldeep-gupta-a0b299327/"
@@ -20,8 +20,8 @@ const Resume = () => {
                 >
                   https://www.linkedin.com/in/kuldeep-gupta-a0b299327/
                 </a>
-              </p>
-              <a href="https://github.com/kuldeep12309" target="_blank">
+           
+              <a  href="https://github.com/kuldeep12309" target="_blank">
                 GitHub
               </a>{" "}
               <a
