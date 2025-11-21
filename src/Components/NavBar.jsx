@@ -18,25 +18,25 @@ function NavBar() {
 
   return (
     <Navbar expand={expand} className="container-fluid shadow-lg  bg-blue-950">
-      <Container fluid >
+      <Container fluid>
         <Navbar.Brand className="fw-bold text-white">I Portfolio</Navbar.Brand>
 
-        <Navbar.Toggle className="bg-blue-950" 
+        <Navbar.Toggle
+          className="bg-white"
           aria-controls={`offcanvasNavbar-expand-${expand}`}
           onClick={handleShow}
-          
         />
 
-        <Navbar.Offcanvas 
+        <Navbar.Offcanvas
           show={show}
           onHide={handleClose}
-          className="bg-blue-950"
+          className="bg-white"
           id={`offcanvasNavbar-expand-${expand}`}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
           placement="start"
           style={{ width: "60%" }}
         >
-          <Offcanvas.Header closeButton className="bg-blue-950" >
+          <Offcanvas.Header closeButton className="bg-blue-950 btn-close-white">
             <Offcanvas.Title
               id={`offcanvasNavbarLabel-expand-${expand}`}
               className="fw-bold text-light"
